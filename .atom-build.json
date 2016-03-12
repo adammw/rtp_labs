@@ -1,0 +1,9 @@
+{
+  "cmd": "gnatmake -F -D \"{PROJECT_PATH}/build\" -o \"{PROJECT_PATH}/build/{FILE_ACTIVE_NAME_BASE}\" -gnat95 {FILE_ACTIVE}",
+  "cwd": "{FILE_ACTIVE_PATH}",
+  "env": {
+    "PATH": "/usr/local/gnat/bin:/usr/bin"
+  },
+  "name": "gnatmake",
+  "errorMatch": ["(?<file>[^:\\n]+):(?<line>\\d+):(?<col>\\d+):"]
+}
